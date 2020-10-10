@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+.LogIn {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.but {
+  border-radius: 0.5rem;
+  border: #282c34;
+  background-color: #282c34;
+  width: 100%;
+  height: 5vh;
+  color: white;
+}
+
+.CardLittera {
+  background-color: whitesmoke;
+  border: whitesmoke ;
+  border-radius: 2rem;
+  height: 50vh;
+  width: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+  
+}
+
+.input {
+  color: black;
+}

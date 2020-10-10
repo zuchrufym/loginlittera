@@ -1,26 +1,49 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+// import React, {useState} from 'react'
+import {Provider} from 'react-redux'
+import Register from './Register'
+import store from './store'
+import './App.css'
+import { Row, Col} from 'reactstrap'
 
-function App() {
+const App = () => {
+
+  // let [data, setData]= useState({
+  //   email: '',
+  //   password:'',
+
+  // });
+
+  // const onChange = e => {
+  //   console.log(e.target.name);
+  //   setData({...data, [e.target.name]:e.target.value})
+  //   // setData({  });
+
+  // }
+
+
+  // let{email, password}= data;
+
+  // const submitData= () => {
+  //   console.log(data);
+
+    
+  // }
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="LogIn">
+      <Row>
+      Littera
+      </Row>
+      <div className="CardLittera">
+        <Provider store={store}>
+          <Register></Register>
+        </Provider>
+      </div>
+      
     </div>
-  );
+    
+  )
 }
 
-export default App;
+export default App
